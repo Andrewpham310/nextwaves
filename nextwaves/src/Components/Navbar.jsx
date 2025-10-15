@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import assets from '../assets/assets';
 import ThemeToggleBtn from './ThemeToggleBtn';
+import Chatbot from './Chatbot';
 import { motion } from "motion/react";
 
 const Navbar = ({ theme, setTheme }) => {
@@ -36,6 +37,9 @@ const Navbar = ({ theme, setTheme }) => {
           Connect <img src={assets.arrow_icon} width={14} alt='' />
         </a>
       </div>
+
+      {/* Chatbot Component */}
+      
     </motion.div>
   )
 }

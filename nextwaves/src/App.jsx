@@ -10,6 +10,7 @@ import Blog from './Components/Blog';
 import ContactUs from './Components/ContactUs';
 import { Toaster } from 'react-hot-toast'
 import Footer from './Components/Footer';
+import Chatbot from './Components/Chatbot';
 
 const App = () => {
 
@@ -29,6 +30,8 @@ const App = () => {
       <Blog />
       <ContactUs />
       <Footer theme={theme} />
+      <Chatbot className='z-50' theme={theme} />
+
     </div>
   )
 }

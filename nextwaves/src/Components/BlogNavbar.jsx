@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import assets from '../assets/assets';
 import ThemeToggleBtn from './ThemeToggleBtn';
+import Chatbot from './Chatbot';
 import { motion } from "motion/react";
 
 const BlogNavbar = ({ theme, setTheme }) => {
@@ -39,6 +40,9 @@ const BlogNavbar = ({ theme, setTheme }) => {
                     Connect <img src={assets.arrow_icon} width={14} alt='' />
                 </a>
             </div>
+
+            {/* Chatbot Component */}
+            <Chatbot theme={theme} />
         </motion.div>
     )
 }
